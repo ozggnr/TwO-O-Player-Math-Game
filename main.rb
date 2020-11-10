@@ -23,7 +23,7 @@ while true
       player_1.lives = player_1.lives - 1
       puts "P1: #{player_1.lives}/3 vs P2: #{player_2.lives}/3"
       if player_1.lives == 0
-        puts "Player 2 wins "
+        puts "Player 2 wins with a score of #{player_2.lives}/3"
         puts "----GAME OVER----"
         break
       end
@@ -33,6 +33,7 @@ while true
       player_2.lives = player_2.lives - 1
       puts "P1: #{player_1.lives}/3 vs P2: #{player_2.lives}/3"
       if player_2.lives == 0
+        puts "Player 1 wins with a score of #{player_1.lives}/3"
         puts "----GAME OVER----"
         break
       end
